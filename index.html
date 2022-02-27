@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link defer rel="stylesheet" href="main.css" />
+    <script defer src="main.js"></script>
+  </head>
+
+  <body>
+    <div class="user-inputBox">
+      <h1>Enter the D-day</h1>
+      <input
+        type="date"
+        id="dateInput"
+        placeholder="Day Month Year"
+        value="2023-01-01"
+      />
+      <input
+        type="submit"
+        class="clickButton"
+        value="Click"
+        onclick="enterDate()"
+      />
+    </div>
+    <h1>Until D-day</h1>
+
+    <div class="countdown-container">
+      <div class="countdown-el days-c">
+        <p class="big-text" id="days"></p>
+        <span>Days</span>
+      </div>
+      <div class="countdown-el hours-c">
+        <p class="big-text" id="hours"></p>
+        <span>Hours</span>
+      </div>
+      <div class="countdown-el mins-c">
+        <p class="big-text" id="mins"></p>
+        <span>Mins</span>
+      </div>
+      <div class="countdown-el seconds-c">
+        <p class="big-text" id="seconds"></p>
+        <span>Seconds</span>
+      </div>
+    </div>
+  </body>
+</html>
